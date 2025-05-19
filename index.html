@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Breakout Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="a.css">
+</head>
+<body>
+  <div class="container-fluid p-5 bg-primary text-center text-white">
+    <h1>🧱Breakout Game</h1>
+    <p>Hancurkan Balok dengan Bola</p>
+</div>
+
+<nav class="navbar navbar-expand-lg  sticky-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#About">About</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#How">How to Play</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Game">Game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Credit">Credit</a>
+          </li>
+         
+        
+          
+       
+        </form>
+        
+      </div>
+    </div>
+  </nav>
+
+  
+    
+  
+  <div class="container text-center mt-5  ">
+    <h1 id="About" >About</h1><br>
+    <p style="text-align: left;">Pada game Breakout, pemain mengendalikan sebuah paddle (semacam papan atau raket) yang bergerak secara horizontal di bagian bawah layar untuk memantulkan bola ke arah sekumpulan balok yang terletak di bagian atas layar. Tujuan dari permainan ini adalah untuk menghancurkan semua balok dengan bola yang memantul, sambil menghindari agar bola tidak jatuh ke bawah layar. Setiap kali bola memantul dari paddle atau balok, pemain mendapatkan poin.</p>
+    <p style="text-align: left;">Tujuan utama dari game ini adalah untuk menghancurkan semua balok yang ada di layar dengan memantulkan bola dan naik level. Pemain harus menggunakan paddle untuk mengarahkan bola ke arah balok dan menghancurkannya. Setiap kali pemain menghancurkan balok, mereka mendapatkan poin. Jika bola jatuh ke bawah, pemain kehilangan satu nyawa.</p>
+  </div>
+    <br>
+
+    <div class="container text-center mt-5  ">
+      <h1 id="How">How to Play</h1><br>
+      <p style="text-align: left;">
+        1.Kontrol Paddle dengan Akurat: Karena bola bergerak sangat cepat, penting untuk mengendalikan paddle dengan akurat. Usahakan untuk menjaga bola tetap berada di area permainan.<br>
+
+        2.Manfaatkan Power-Up: Beberapa versi game Breakout menyediakan power-up seperti memperbesar paddle atau menambahkan bola ekstra. Gunakan power-up ini untuk membantu menghancurkan balok lebih cepat.<br>
+        
+        3.Perhatikan Kecepatan Bola: Semakin tinggi level, semakin cepat bola bergerak. Fokuskan perhatian Anda pada kecepatan bola dan siapkan paddle di posisi yang tepat untuk memantulkan bola.<br>
+        
+        4.Hancurkan Balok dengan Cepat: Jika Anda ingin mencapai skor yang tinggi, Anda harus cepat dalam menghancurkan balok. Jangan biarkan satu balok bertahan terlalu lama karena bola bisa keluar dari jalur dan jatuh.<br>
+        
+        5.Jaga Nyawa Anda: Anda hanya punya sejumlah nyawa untuk bermain. Jika bola jatuh terlalu banyak, game akan berakhir. Cobalah untuk memantulkan bola dengan baik dan menjaga paddle pada posisi yang tepat.<br>
+      </p>
+    </div>
+    
+    <br>
+<div class="container text-center mt-5 ">
+  <h1 id="Game">🧱Breakout Game</h1>
+  <div class="game-container">
+    <div class="paddle" id="paddle"></div>
+    <div class="ball" id="ball"></div>
+  </div>
+  <div class="info">
+    <h3>Skor: <span id="score">0</span></h3>
+    <h3>Nyawa: <span id="lives" class="lives">3</span></h3>
+    <h3>Level: <span id="level">1</span></h3>
+    <button class="btn btn-primary" id="startBtn">Main</button>
+    <button class="btn btn-primary" onclick="startGame()">Mulai Ulang</button>
+  </div>
+</div>
+<br>
+<br>
+
+
+  
+  <div class="container-fluid bg-primary" id="Credit" >
+    <p class="mb-1">&copy; 2025 Breakout Game | Dibuat oleh [Jordan]</p>
+    <p class="mb-0">
+      Dibangun menggunakan <a href="https://getbootstrap.com" class="text-info" target="_blank">Bootstrap 5</a> dan <a href="https://chatgpt.com/" class="text-info" target="_blank">Chatgpt</a>.
+    </p>
+    
+  </div>
+  
+  
+  
+<script src="b.js"></script>
+
+
+</body>
+</html>
